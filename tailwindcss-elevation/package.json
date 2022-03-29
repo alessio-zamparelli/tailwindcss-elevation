@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-elevation",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Tailwind CSS plugin for Material Components elevation classes.",
   "author": "Joonas Kykkänen <jonaskay@iki.fi>",
   "repository": "https://github.com/jonaskay/tailwindcss-elevation.git",
@@ -9,7 +9,8 @@
   "scripts": {
     "lint": "eslint index.js src/** test/**",
     "test": "mocha",
-    "test-reporter": "nyc --reporter=lcov mocha"
+    "test-reporter": "nyc --reporter=lcov mocha",
+    "prettier-fix": "prettier --write ."
   },
   "files": [
     "README.md",
@@ -41,7 +42,7 @@
     "hex-rgb": "^4.1.0"
   },
   "peerDependencies": {
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^3.0.x"
   },
   "husky": {
     "hooks": {

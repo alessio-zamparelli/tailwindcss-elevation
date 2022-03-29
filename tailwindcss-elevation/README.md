@@ -1,4 +1,5 @@
 # tailwindcss-elevation
+
 [![Build Status](https://travis-ci.com/jonaskay/tailwindcss-elevation.svg?branch=master)](https://travis-ci.com/jonaskay/tailwindcss-elevation) [![Test Coverage](https://api.codeclimate.com/v1/badges/0c8c89a338155da523e7/test_coverage)](https://codeclimate.com/github/jonaskay/tailwindcss-elevation/test_coverage)
 
 Add Material Components elevation classes to your [Tailwind CSS](https://tailwindcss.com/docs/what-is-tailwind/) project. Check out the [demo](https://jonaskay.github.io/tailwindcss-elevation/)!
@@ -13,9 +14,7 @@ To activate the plugin, add a `tailwind.config.js` file to the root of your proj
 
 ```javascript
 module.exports = {
-  plugins: [
-    require('tailwindcss-elevation')(['responsive']),
-  ]
+  plugins: [require('tailwindcss-elevation')(['responsive'])]
 }
 ```
 
@@ -32,21 +31,18 @@ To change the default configurations, you can include a config object:
 ```javascript
 module.exports = {
   plugins: [
-    require('tailwindcss-elevation')(
-      [],
-      {
-        color: '77,192,181',
-        opacityBoost: '0.23'
-      }
-    )
+    require('tailwindcss-elevation')([], {
+      color: '77,192,181',
+      opacityBoost: '0.23'
+    })
   ]
 }
 ```
 
 Config object accepts the following properties:
 
-* `color` changes the default box-shadow base color and accepts an RGB (e.g. `'77,192,181'`) or HEX triplet (e.g. `'#4dc0b5'`) as its value. When using a CSS custom property (variable) as the value, you have to use an RGB triplet.
-* `opacityBoost` is added to the default box-shadow opacity and accepts a number between 0.0 and 1.0
+- `color` changes the default box-shadow base color and accepts an RGB (e.g. `'77,192,181'`) or HEX triplet (e.g. `'#4dc0b5'`) as its value. When using a CSS custom property (variable) as the value, you have to use an RGB triplet.
+- `opacityBoost` is added to the default box-shadow opacity and accepts a number between 0.0 and 1.0
 
 ## Basic usage
 
@@ -59,5 +55,6 @@ You can apply elevation to an element using the `.elevation-{z-value}` utilities
 The z values range from 0 to 24.
 
 ## Material documentation
-* [Material Design: Elevation](https://material.io/design/environment/elevation.html)
-* [Material Components for the web](https://material.io/develop/web/)
+
+- [Material Design: Elevation](https://material.io/design/environment/elevation.html)
+- [Material Components for the web](https://material.io/develop/web/)

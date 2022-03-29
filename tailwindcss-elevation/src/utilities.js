@@ -1,11 +1,11 @@
-const boxShadow = require("./box-shadow");
+const boxShadow = require('./box-shadow')
 
 module.exports = function utilities(config = {}) {
-  const result = {};
+  const result = {}
 
   for (let i = 0; i < 25; i++) {
-    result[`.elevation-${i}`] = { boxShadow: boxShadow(i, config) };
+    result[`.elevation-${i}`] = { boxShadow: boxShadow(i, config) }
   }
 
-  return result;
-};
+  return result
+}

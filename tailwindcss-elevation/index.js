@@ -1,13 +1,13 @@
-const validateConfig = require("./src/validate-config");
-const utilities = require("./src/utilities");
+const validateConfig = require('./src/validate-config')
+const utilities = require('./src/utilities')
 
-module.exports = function(variants, config) {
-  const err = validateConfig(config);
+module.exports = function (variants, config) {
+  const err = validateConfig(config)
   if (err) {
-    throw err;
+    throw err
   }
 
-  return function({ addUtilities }) {
-    addUtilities(utilities(config), variants);
-  };
-};
+  return function ({ addUtilities }) {
+    addUtilities(utilities(config), variants)
+  }
+}
